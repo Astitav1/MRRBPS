@@ -1,5 +1,5 @@
 
-# 🏫 M.R.R.B Public School Website
+# 🏫 M.R.R.B Public School Website (https://mrrbpublicschool.netlify.app/)
 
 A modern, responsive, and SEO-friendly website designed for **M.R.R.B Public School**, aimed at increasing admissions and showcasing the school's heritage, facilities, and campus strength.
 
