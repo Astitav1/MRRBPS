@@ -83,9 +83,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const yearSpan = document.getElementById('footer-year');
     if (yearSpan) { yearSpan.textContent = new Date().getFullYear(); }
 
-    // --- Contact Form Handler (Basic Placeholder) ---
     const contactForm = document.getElementById('contact-form');
-    if (contactForm) { contactForm.addEventListener('submit', (e) => { /* ... (code remains same) ... */ e.preventDefault(); const name = contactForm.querySelector('#name-input').value; const email = contactForm.querySelector('#email-input').value; const message = contactForm.querySelector('#message-input').value; if (name && email && message) { alert('Thank you for your message! We will get back to you soon. (This is a demo - form data not sent)'); contactForm.reset(); } else { alert('Please fill in all fields.'); } }); }
+    if (contactForm) { contactForm.addEventListener('submit', (e) => {  e.preventDefault(); const name = contactForm.querySelector('#name-input').value; const email = contactForm.querySelector('#email-input').value; const message = contactForm.querySelector('#message-input').value; if (name && email && message) { alert('Thank you for your message! We will get back to you soon. (This is a demo - form data not sent)'); contactForm.reset(); } else { alert('Please fill in all fields.'); } }); }
 
     const popupOverlay = document.getElementById('popup-ad-overlay');
     const popupCloseBtn = document.querySelector('.popup-close-btn');
@@ -111,7 +110,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     currentSectionId = section.getAttribute('id');
                 }
             });
-            // Prioritize 'home' if very near the top
              if (window.pageYOffset < (heroSection?.offsetHeight || window.innerHeight) / 2) {
                  currentSectionId = 'home';
              }
